@@ -37,7 +37,6 @@ The image is first **cropped** using plate boundaries detected by the YOLOv8 mod
 After **checking image DPI**, it is then **converted to grayscale, contrast-enhanced**, and **refined using morphological closing** to improve text clarity and OCR accuracy.  
 <p align="center">
   <img src="./assets/carplate.png" width="400"/><br>
-<!--   <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/63dd4ca0-9d78-4720-b327-812b5c4f7423" width="400"/> -->
 </p>
 
 <p align="center"><em>
@@ -91,7 +90,7 @@ Our goal in this project is to create a model with high accuracy, precision, and
 ### Discuss the results of your methods and present visualizations and quantitative scoring metrics. What does your visualization/metric tell you? Why did your model perform well/poorly? What are the next steps you plan to take?
 
 <p align="center">
-  <img width="600" alt="image" src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/f290c1c3-4b30-46f8-bd56-04674b57ce14">
+  <img width="600" alt="image" src="./assets/discuss.png">
 </p>
 
 <p align="center"><em>
@@ -105,7 +104,7 @@ Our model successfully detected some licence plates but failed to detect some ot
 
 
 <p align="center">
-  <img width="400" alt="image" src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/c5b15dca-557b-4392-bc8f-b01dca1a8d98">
+  <img width="400" alt="image" src="./assets/quantitative.png">
 </p>
 
 <p align="left"><em>
@@ -130,9 +129,9 @@ Precision: 0.9495
 Recall: 0.7962  
 F1 Score: 0.8661  
 <p align="center">
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/fe532c7a-c6bb-43cd-b7e0-0f7b56f9f6cf" width="300" height="220"/>
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/baaba635-6314-49b8-98dd-63bf1e9c8508" width="300" height="220"/>
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/79efa8fe-d604-403d-be43-65091e13da65" width="300" height="220"/>
+  <img src="./assets/DPI_Performance.png" width="300" height="220"/>
+  <img src="./assets/DPI_Distribution.png" width="300" height="220"/>
+  <img src="./assets/DPI_Analysis.png" width="300" height="220"/>
 </p>
 
 
@@ -146,8 +145,8 @@ Incorrect results: 3 (6.7%)
 Overall accuracy: 93.33%  
 
 <p align="center">
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/c8f258df-0a6c-4ede-9eb9-5f10a01db573" width="400" height="400"/>
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/e179be47-a144-4c1c-885c-97258a936f77" width="400" height="400"/>
+  <img src="./assets/Overall_OCR.png" width="400" height="400"/>
+  <img src="./assets/OCR_Models.png" width="400" height="400"/>
 </p>
 
 
@@ -166,9 +165,9 @@ Correct: 16.0 (94.1%)
 Incorrect: 1.0 (5.9%)  
 Accuracy: 94.12%  
 <p align="center">
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/dec55561-b6b7-44ea-8b15-76af21ee26a3" width="300" height="220"/>
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/d4328557-806d-4c4a-9464-0f3e292b464b" width="300" height="220"/>
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/2ba6bcca-a398-45f9-8d35-b4151d4f975b" width="300" height="220"/>
+  <img src="./assets/EasyOCR.png" width="300" height="220"/>
+  <img src="./assets/EasyOCR-Performence.png" width="300" height="220"/>
+  <img src="./assets/EasyOCR_Distribution.png" width="300" height="220"/>
 </p>
 
 
@@ -197,7 +196,7 @@ Accuracy: 94.12%
 - Our model correctly identified 87 positive cases, incorrectly predicted 6 (false negatives), and missed 15 false positives, with no true negatives as this is not applicable. We get a total accuracy rate of 80.6% and shows a relatively reliable performance of our model.
 
 <p align="center">
-  <img width="500" alt="image" src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/7633f081-7fca-4ca3-a288-9a8716d9646c">
+  <img width="500" alt="image" src="./assets/Precision_Recall.png">
 </p>
 
 - Our YOLOv8 model performed generally well with high precision, however there were still some false positive and negative cases. The false negatives cases when some plates were missed could be due to poor image quality or issues with angles or lighting. The false positives suggest that some objects other than license plates were mistaken as plates, which could be due to background noises or these objects looking too similar. 
@@ -224,22 +223,15 @@ We have incorporated OCR to read and validate detected plates. This helps to ver
 [2] Y. Wang, Z.-P. Bian, Y. Zhou, and L.-P. Chau, “Rethinking and Designing a High-performing Automatic License Plate Recognition Approach,” arXiv, 30 Nov. 2020, [Online]. Available: https://arxiv.org/abs/2011.14936. [Accessed: 21 Feb. 2025].  
 [3] H. Saghaei, “Proposal for Automatic License and Number Plate Recognition System for Vehicle Identification,” arXiv, 9 Oct. 2016, [Online]. Available: https://arxiv.org/abs/1610.03341. [Accessed: 21 Feb. 2025].  
 
-## Gantt Chart
-
-<img width="1059" alt="phase1" src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/94182/4d82457d-6143-4a02-9dd7-1180bffd904f"> 
-
-<img width="1045" alt="phase2" src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/94182/627c548c-6533-4569-8bc5-a98cfe8718af">
-
-<img width="963" alt="phase3" src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/94182/270970b2-dc7b-4fcd-8d15-b0e80d404500">
 
 ## Proposal Contribution Table
-<img width="963" alt="phase4" src="https://pedal.guide/wp-content/uploads/2025/02/proposal-contribution-table.png">
+<img width="900" src="./assets/proposal.png">
 
 ## Midterm Contribution Table
-<img width="963" alt="phase4" src="https://pedal.guide/wp-content/uploads/2025/03/mt-contribuation.png">
+<img width="900" src="./assets/midterm.png">
 
 ## Final Contribution Table
-<img width="963" alt="phase4" src="https://pedal.guide/wp-content/uploads/2025/04/final-report-contributions.png">
+<img width="900"  src="./assets/final.png">
  
 
 
