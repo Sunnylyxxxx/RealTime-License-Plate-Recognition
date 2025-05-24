@@ -1,4 +1,4 @@
-# 25Spring_ML4641_Group59
+# Real-time License Plate Recognition
 
 ## 1.	Introduction/ Background
 
