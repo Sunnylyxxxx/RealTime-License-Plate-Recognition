@@ -26,7 +26,7 @@ Evaluation Metrics:
 
 ### Data Preprocessing:
 ✅Crop  
-✅DPI
+✅DPI  
 ✅Grayscale  
 ✅Increase Contrast  
 ✅Morphological  
