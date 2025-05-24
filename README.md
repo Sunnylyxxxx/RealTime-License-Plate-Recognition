@@ -36,8 +36,8 @@ Evaluation Metrics:
 The image is first **cropped** using plate boundaries detected by the YOLOv8 model.
 After **checking image DPI**, it is then **converted to grayscale, contrast-enhanced**, and **refined using morphological closing** to improve text clarity and OCR accuracy.  
 <p align="center">
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/4ab40042-0b9d-410c-a418-d8e8f2d90659" width="400"/><br>
-  <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/63dd4ca0-9d78-4720-b327-812b5c4f7423" width="400"/>
+  <img src="./assets/carplate.png" width="400"/><br>
+<!--   <img src="https://github.gatech.edu/yli3708/25Spring_ML4641_Group59/assets/85810/63dd4ca0-9d78-4720-b327-812b5c4f7423" width="400"/> -->
 </p>
 
 <p align="center"><em>
